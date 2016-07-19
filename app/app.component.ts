@@ -1,9 +1,10 @@
 import { Component }         from '@angular/core';
-//mport { HeroFormComponent } from './hero-form.component';
+import { HeroFormComponent } from './hero-form.component';
 
 @Component({
     selector: 'my-app',
-    template: '<div>test</div>'
+    template: '<hero-form></hero-form>',
+    directives: [HeroFormComponent]
 })
 export class AppComponent { }
 

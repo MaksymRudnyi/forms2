@@ -9,13 +9,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = require('@angular/core');
-//mport { HeroFormComponent } from './hero-form.component';
+const hero_form_component_1 = require('./hero-form.component');
 let AppComponent = class AppComponent {
 };
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: '<div>test</div>'
+        template: '<hero-form></hero-form>',
+        directives: [hero_form_component_1.HeroFormComponent]
     }), 
     __metadata('design:paramtypes', [])
 ], AppComponent);

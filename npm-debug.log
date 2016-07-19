@@ -1,35 +1,351 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'bootstrap', '--save' ]
 2 info using npm@2.10.1
 3 info using node@v0.12.4
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info prestart angular2-quickstart@1.0.0
-6 info start angular2-quickstart@1.0.0
-7 verbose unsafe-perm in lifecycle true
-8 info angular2-quickstart@1.0.0 Failed to exec start script
-9 verbose stack Error: angular2-quickstart@1.0.0 start: `tsc && concurrently "npm run tsc:w" "npm run lite" `
-9 verbose stack Exit status 2
-9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
-9 verbose stack     at EventEmitter.emit (events.js:110:17)
-9 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
-9 verbose stack     at ChildProcess.emit (events.js:110:17)
-9 verbose stack     at maybeClose (child_process.js:1015:16)
-9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
-10 verbose pkgid angular2-quickstart@1.0.0
-11 verbose cwd /Users/maxim/Documents/angular2/forms
-12 error Darwin 14.4.0
-13 error argv "node" "/usr/local/bin/npm" "start"
-14 error node v0.12.4
-15 error npm  v2.10.1
-16 error code ELIFECYCLE
-17 error angular2-quickstart@1.0.0 start: `tsc && concurrently "npm run tsc:w" "npm run lite" `
-17 error Exit status 2
-18 error Failed at the angular2-quickstart@1.0.0 start script 'tsc && concurrently "npm run tsc:w" "npm run lite" '.
-18 error This is most likely a problem with the angular2-quickstart package,
-18 error not with npm itself.
-18 error Tell the author that this fails on your system:
-18 error     tsc && concurrently "npm run tsc:w" "npm run lite"
-18 error You can get their info via:
-18 error     npm owner ls angular2-quickstart
-18 error There is likely additional logging output above.
-19 verbose exit [ 1, true ]
+4 verbose install initial load of /Users/maxim/Documents/angular2/forms/package.json
+5 warn package.json angular2-quickstart@1.0.0 No description
+6 warn package.json angular2-quickstart@1.0.0 No repository field.
+7 warn package.json angular2-quickstart@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/angular2-in-memory-web-api/package.json
+9 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/bootstrap/package.json
+10 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/concurrently/package.json
+11 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/core-js/package.json
+12 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/lite-server/package.json
+13 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/reflect-metadata/package.json
+14 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/rxjs/package.json
+15 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/systemjs/package.json
+16 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/typescript/package.json
+17 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/typings/package.json
+18 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/zone.js/package.json
+19 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/@angular/common/package.json
+20 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/@angular/compiler/package.json
+21 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/@angular/core/package.json
+22 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/@angular/forms/package.json
+23 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/@angular/http/package.json
+24 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/@angular/platform-browser/package.json
+25 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/@angular/platform-browser-dynamic/package.json
+26 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/@angular/router/package.json
+27 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/@angular/router-deprecated/package.json
+28 verbose installManyTop reading scoped package data from /Users/maxim/Documents/angular2/forms/node_modules/@angular/upgrade/package.json
+29 info package.json @angular/compiler@2.0.0-rc.3 No description
+30 info package.json @angular/core@2.0.0-rc.3 No description
+31 info package.json @angular/http@2.0.0-rc.3 No description
+32 info package.json @angular/forms@0.1.1 No description
+33 info package.json @angular/platform-browser@2.0.0-rc.3 No description
+34 info package.json @angular/platform-browser-dynamic@2.0.0-rc.3 No description
+35 info package.json @angular/router-deprecated@2.0.0-rc.2 No description
+36 info package.json @angular/common@2.0.0-rc.3 No description
+37 info package.json @angular/upgrade@2.0.0-rc.3 No description
+38 verbose readDependencies loading dependencies from /Users/maxim/Documents/angular2/forms/package.json
+39 verbose install bootstrap is installed as 3.3.6
+40 silly cache add args [ 'bootstrap@^3.3.6', null ]
+41 verbose cache add spec bootstrap@^3.3.6
+42 silly cache add parsed spec { raw: 'bootstrap@^3.3.6',
+42 silly cache add   scope: null,
+42 silly cache add   name: 'bootstrap',
+42 silly cache add   rawSpec: '^3.3.6',
+42 silly cache add   spec: '>=3.3.6 <4.0.0',
+42 silly cache add   type: 'range' }
+43 silly addNamed bootstrap@>=3.3.6 <4.0.0
+44 verbose addNamed ">=3.3.6 <4.0.0" is a valid semver range for bootstrap
+45 silly addNameRange { name: 'bootstrap', range: '>=3.3.6 <4.0.0', hasData: false }
+46 silly mapToRegistry name bootstrap
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry uri https://registry.npmjs.org/bootstrap
+50 verbose addNameRange registry:https://registry.npmjs.org/bootstrap not in flight; fetching
+51 verbose request uri https://registry.npmjs.org/bootstrap
+52 verbose request no auth needed
+53 info attempt registry request try #1 at 10:47:05 PM
+54 verbose request id 470016b50572c96b
+55 verbose etag "EKW67TM8B2NEI6E28RYB6PP51"
+56 http request GET https://registry.npmjs.org/bootstrap
+57 http 304 https://registry.npmjs.org/bootstrap
+58 silly get cb [ 304,
+58 silly get   { date: 'Mon, 18 Jul 2016 19:47:05 GMT',
+58 silly get     via: '1.1 varnish',
+58 silly get     'cache-control': 'max-age=300',
+58 silly get     etag: '"EKW67TM8B2NEI6E28RYB6PP51"',
+58 silly get     age: '0',
+58 silly get     connection: 'keep-alive',
+58 silly get     'x-served-by': 'cache-fra1239-FRA',
+58 silly get     'x-cache': 'HIT',
+58 silly get     'x-cache-hits': '1',
+58 silly get     'x-timer': 'S1468871225.049130,VS0,VE703',
+58 silly get     vary: 'Accept-Encoding' } ]
+59 verbose etag https://registry.npmjs.org/bootstrap from cache
+60 verbose get saving bootstrap to /Users/maxim/.npm/registry.npmjs.org/bootstrap/.cache.json
+61 silly addNameRange number 2 { name: 'bootstrap', range: '>=3.3.6 <4.0.0', hasData: true }
+62 silly addNameRange versions [ 'bootstrap',
+62 silly addNameRange   [ '0.0.1',
+62 silly addNameRange     '0.0.2',
+62 silly addNameRange     '3.1.1',
+62 silly addNameRange     '3.2.0',
+62 silly addNameRange     '3.3.0',
+62 silly addNameRange     '3.3.1',
+62 silly addNameRange     '3.3.2',
+62 silly addNameRange     '3.3.4',
+62 silly addNameRange     '3.3.5',
+62 silly addNameRange     '3.3.6',
+62 silly addNameRange     '4.0.0-alpha.2' ] ]
+63 silly addNamed bootstrap@3.3.6
+64 verbose addNamed "3.3.6" is a plain semver version for bootstrap
+65 silly cache afterAdd bootstrap@3.3.6
+66 verbose afterAdd /Users/maxim/.npm/bootstrap/3.3.6/package/package.json not in flight; writing
+67 verbose afterAdd /Users/maxim/.npm/bootstrap/3.3.6/package/package.json written
+68 silly install resolved [ { name: 'bootstrap',
+68 silly install resolved     description: 'The most popular front-end framework for developing responsive, mobile first projects on the web.',
+68 silly install resolved     version: '3.3.6',
+68 silly install resolved     keywords:
+68 silly install resolved      [ 'css',
+68 silly install resolved        'less',
+68 silly install resolved        'mobile-first',
+68 silly install resolved        'responsive',
+68 silly install resolved        'front-end',
+68 silly install resolved        'framework',
+68 silly install resolved        'web' ],
+68 silly install resolved     homepage: 'http://getbootstrap.com',
+68 silly install resolved     author: { name: 'Twitter, Inc.' },
+68 silly install resolved     scripts: { test: 'grunt test' },
+68 silly install resolved     style: 'dist/css/bootstrap.css',
+68 silly install resolved     less: 'less/bootstrap.less',
+68 silly install resolved     main: './dist/js/npm',
+68 silly install resolved     repository:
+68 silly install resolved      { type: 'git',
+68 silly install resolved        url: 'git+https://github.com/twbs/bootstrap.git' },
+68 silly install resolved     bugs: { url: 'https://github.com/twbs/bootstrap/issues' },
+68 silly install resolved     license: 'MIT',
+68 silly install resolved     devDependencies:
+68 silly install resolved      { btoa: '~1.1.2',
+68 silly install resolved        glob: '~6.0.1',
+68 silly install resolved        grunt: '~0.4.5',
+68 silly install resolved        'grunt-autoprefixer': '~3.0.3',
+68 silly install resolved        'grunt-contrib-clean': '~0.6.0',
+68 silly install resolved        'grunt-contrib-compress': '~0.14.0',
+68 silly install resolved        'grunt-contrib-concat': '~0.5.1',
+68 silly install resolved        'grunt-contrib-connect': '~0.11.2',
+68 silly install resolved        'grunt-contrib-copy': '~0.8.0',
+68 silly install resolved        'grunt-contrib-csslint': '~0.5.0',
+68 silly install resolved        'grunt-contrib-cssmin': '~0.14.0',
+68 silly install resolved        'grunt-contrib-htmlmin': '~0.6.0',
+68 silly install resolved        'grunt-contrib-jade': '~0.15.0',
+68 silly install resolved        'grunt-contrib-jshint': '~0.11.2',
+68 silly install resolved        'grunt-contrib-less': '~1.1.0',
+68 silly install resolved        'grunt-contrib-qunit': '~0.7.0',
+68 silly install resolved        'grunt-contrib-uglify': '~0.9.2',
+68 silly install resolved        'grunt-contrib-watch': '~0.6.1',
+68 silly install resolved        'grunt-csscomb': '~3.1.0',
+68 silly install resolved        'grunt-exec': '~0.4.6',
+68 silly install resolved        'grunt-html': '~5.0.1',
+68 silly install resolved        'grunt-jekyll': '~0.4.2',
+68 silly install resolved        'grunt-jscs': '~2.3.0',
+68 silly install resolved        'grunt-saucelabs': '~8.6.1',
+68 silly install resolved        'grunt-sed': 'github:twbs/grunt-sed#v0.2.0',
+68 silly install resolved        'load-grunt-tasks': '~3.3.0',
+68 silly install resolved        'markdown-it': '^5.0.0',
+68 silly install resolved        'npm-shrinkwrap': '^200.4.0',
+68 silly install resolved        'time-grunt': '^1.2.1' },
+68 silly install resolved     engines: { node: '>=0.10.1' },
+68 silly install resolved     files:
+68 silly install resolved      [ 'dist',
+68 silly install resolved        'fonts',
+68 silly install resolved        'grunt',
+68 silly install resolved        'js/*.js',
+68 silly install resolved        'less/**/*.less',
+68 silly install resolved        'Gruntfile.js',
+68 silly install resolved        'LICENSE' ],
+68 silly install resolved     jspm: { main: 'js/bootstrap', shim: [Object], files: [Object] },
+68 silly install resolved     gitHead: '81df608a40bf0629a1dc08e584849bb1e43e0b7a',
+68 silly install resolved     _id: 'bootstrap@3.3.6',
+68 silly install resolved     _shasum: '8de8f749dc8a743f2ac5b510d988371e3daa6589',
+68 silly install resolved     _from: 'bootstrap@>=3.3.6 <4.0.0',
+68 silly install resolved     _npmVersion: '2.11.3',
+68 silly install resolved     _nodeVersion: '0.12.7',
+68 silly install resolved     _npmUser: { name: 'twbs', email: 'getbootstrap@gmail.com' },
+68 silly install resolved     dist:
+68 silly install resolved      { shasum: '8de8f749dc8a743f2ac5b510d988371e3daa6589',
+68 silly install resolved        tarball: 'https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.6.tgz' },
+68 silly install resolved     maintainers: [ [Object] ],
+68 silly install resolved     directories: {},
+68 silly install resolved     _resolved: 'https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.6.tgz',
+68 silly install resolved     readme: 'ERROR: No README data found!' } ]
+69 info install bootstrap@3.3.6 into /Users/maxim/Documents/angular2/forms
+70 info installOne bootstrap@3.3.6
+71 verbose installOne of bootstrap to /Users/maxim/Documents/angular2/forms not in flight; installing
+72 verbose lock using /Users/maxim/.npm/_locks/bootstrap-39d6ea6707d83b8d.lock for /Users/maxim/Documents/angular2/forms/node_modules/bootstrap
+73 silly install write writing bootstrap 3.3.6 to /Users/maxim/Documents/angular2/forms/node_modules/bootstrap
+74 verbose unbuild node_modules/bootstrap
+75 info preuninstall bootstrap@3.3.6
+76 info uninstall bootstrap@3.3.6
+77 verbose unbuild rmStuff bootstrap@3.3.6 from /Users/maxim/Documents/angular2/forms/node_modules
+78 info postuninstall bootstrap@3.3.6
+79 silly gentlyRm /Users/maxim/Documents/angular2/forms/node_modules/bootstrap is being purged from base /Users/maxim/Documents/angular2/forms
+80 verbose gentlyRm don't care about contents; nuking /Users/maxim/Documents/angular2/forms/node_modules/bootstrap
+81 silly vacuum-fs purging /Users/maxim/Documents/angular2/forms/node_modules/bootstrap
+82 silly vacuum-fs quitting because other entries in /Users/maxim/Documents/angular2/forms/node_modules
+83 verbose tar unpack /Users/maxim/.npm/bootstrap/3.3.6/package.tgz
+84 verbose tar unpacking to /Users/maxim/Documents/angular2/forms/node_modules/bootstrap
+85 silly gentlyRm /Users/maxim/Documents/angular2/forms/node_modules/bootstrap is being purged
+86 verbose gentlyRm don't care about contents; nuking /Users/maxim/Documents/angular2/forms/node_modules/bootstrap
+87 silly gunzTarPerm modes [ '755', '644' ]
+88 silly gunzTarPerm extractEntry package.json
+89 silly gunzTarPerm extractEntry README.md
+90 silly gunzTarPerm extractEntry LICENSE
+91 silly gunzTarPerm extractEntry Gruntfile.js
+92 silly gunzTarPerm extractEntry CHANGELOG.md
+93 silly gunzTarPerm extractEntry dist/css/bootstrap-theme.css
+94 silly gunzTarPerm extractEntry dist/css/bootstrap-theme.css.map
+95 silly gunzTarPerm extractEntry dist/css/bootstrap-theme.min.css
+96 silly gunzTarPerm extractEntry dist/css/bootstrap-theme.min.css.map
+97 silly gunzTarPerm extractEntry dist/css/bootstrap.css
+98 silly gunzTarPerm extractEntry dist/css/bootstrap.css.map
+99 silly gunzTarPerm extractEntry dist/css/bootstrap.min.css
+100 silly gunzTarPerm extractEntry dist/css/bootstrap.min.css.map
+101 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.eot
+102 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.svg
+103 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.ttf
+104 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.woff
+105 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.woff2
+106 silly gunzTarPerm extractEntry dist/js/bootstrap.js
+107 silly gunzTarPerm extractEntry dist/js/bootstrap.min.js
+108 silly gunzTarPerm extractEntry dist/js/npm.js
+109 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.eot
+110 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.svg
+111 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.ttf
+112 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.woff
+113 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.woff2
+114 silly gunzTarPerm extractEntry grunt/bs-commonjs-generator.js
+115 silly gunzTarPerm extractEntry grunt/bs-glyphicons-data-generator.js
+116 silly gunzTarPerm extractEntry grunt/bs-lessdoc-parser.js
+117 silly gunzTarPerm extractEntry grunt/bs-raw-files-generator.js
+118 silly gunzTarPerm extractEntry grunt/.jshintrc
+119 silly gunzTarPerm extractEntry grunt/configBridge.json
+120 silly gunzTarPerm extractEntry grunt/sauce_browsers.yml
+121 silly gunzTarPerm extractEntry js/affix.js
+122 silly gunzTarPerm extractEntry js/button.js
+123 silly gunzTarPerm extractEntry js/carousel.js
+124 silly gunzTarPerm extractEntry js/collapse.js
+125 silly gunzTarPerm extractEntry js/dropdown.js
+126 silly gunzTarPerm extractEntry js/alert.js
+127 silly gunzTarPerm extractEntry js/popover.js
+128 silly gunzTarPerm extractEntry js/scrollspy.js
+129 silly gunzTarPerm extractEntry js/tab.js
+130 silly gunzTarPerm extractEntry js/tooltip.js
+131 silly gunzTarPerm extractEntry js/transition.js
+132 silly gunzTarPerm extractEntry js/modal.js
+133 silly gunzTarPerm extractEntry less/mixins.less
+134 silly gunzTarPerm extractEntry less/alerts.less
+135 silly gunzTarPerm extractEntry less/badges.less
+136 silly gunzTarPerm extractEntry less/bootstrap.less
+137 silly gunzTarPerm extractEntry less/breadcrumbs.less
+138 silly gunzTarPerm extractEntry less/button-groups.less
+139 silly gunzTarPerm extractEntry less/buttons.less
+140 silly gunzTarPerm extractEntry less/carousel.less
+141 silly gunzTarPerm extractEntry less/close.less
+142 silly gunzTarPerm extractEntry less/code.less
+143 silly gunzTarPerm extractEntry less/component-animations.less
+144 silly gunzTarPerm extractEntry less/dropdowns.less
+145 silly gunzTarPerm extractEntry less/forms.less
+146 silly gunzTarPerm extractEntry less/glyphicons.less
+147 silly gunzTarPerm extractEntry less/grid.less
+148 silly gunzTarPerm extractEntry less/input-groups.less
+149 silly gunzTarPerm extractEntry less/jumbotron.less
+150 silly gunzTarPerm extractEntry less/labels.less
+151 silly gunzTarPerm extractEntry less/list-group.less
+152 silly gunzTarPerm extractEntry less/media.less
+153 silly gunzTarPerm extractEntry less/mixins/nav-vertical-align.less
+154 silly gunzTarPerm extractEntry less/mixins/alerts.less
+155 silly gunzTarPerm extractEntry less/mixins/border-radius.less
+156 silly gunzTarPerm extractEntry less/mixins/buttons.less
+157 silly gunzTarPerm extractEntry less/mixins/center-block.less
+158 silly gunzTarPerm extractEntry less/mixins/clearfix.less
+159 silly gunzTarPerm extractEntry less/mixins/forms.less
+160 silly gunzTarPerm extractEntry less/mixins/gradients.less
+161 silly gunzTarPerm extractEntry less/mixins/grid-framework.less
+162 silly gunzTarPerm extractEntry less/mixins/grid.less
+163 silly gunzTarPerm extractEntry less/mixins/hide-text.less
+164 silly gunzTarPerm extractEntry less/mixins/image.less
+165 silly gunzTarPerm extractEntry less/mixins/labels.less
+166 silly gunzTarPerm extractEntry less/mixins/list-group.less
+167 silly gunzTarPerm extractEntry less/mixins/nav-divider.less
+168 silly gunzTarPerm extractEntry less/mixins/background-variant.less
+169 silly gunzTarPerm extractEntry less/mixins/opacity.less
+170 silly gunzTarPerm extractEntry less/mixins/pagination.less
+171 silly gunzTarPerm extractEntry less/mixins/panels.less
+172 silly gunzTarPerm extractEntry less/mixins/progress-bar.less
+173 silly gunzTarPerm extractEntry less/mixins/reset-filter.less
+174 silly gunzTarPerm extractEntry less/mixins/reset-text.less
+175 silly gunzTarPerm extractEntry less/mixins/resize.less
+176 silly gunzTarPerm extractEntry less/mixins/responsive-visibility.less
+177 silly gunzTarPerm extractEntry less/mixins/size.less
+178 silly gunzTarPerm extractEntry less/mixins/tab-focus.less
+179 silly gunzTarPerm extractEntry less/mixins/table-row.less
+180 silly gunzTarPerm extractEntry less/mixins/text-emphasis.less
+181 silly gunzTarPerm extractEntry less/mixins/text-overflow.less
+182 silly gunzTarPerm extractEntry less/mixins/vendor-prefixes.less
+183 silly gunzTarPerm extractEntry less/modals.less
+184 silly gunzTarPerm extractEntry less/navbar.less
+185 silly gunzTarPerm extractEntry less/navs.less
+186 silly gunzTarPerm extractEntry less/normalize.less
+187 silly gunzTarPerm extractEntry less/pager.less
+188 silly gunzTarPerm extractEntry less/pagination.less
+189 silly gunzTarPerm extractEntry less/panels.less
+190 silly gunzTarPerm extractEntry less/popovers.less
+191 silly gunzTarPerm extractEntry less/print.less
+192 silly gunzTarPerm extractEntry less/progress-bars.less
+193 silly gunzTarPerm extractEntry less/responsive-embed.less
+194 silly gunzTarPerm extractEntry less/responsive-utilities.less
+195 silly gunzTarPerm extractEntry less/scaffolding.less
+196 silly gunzTarPerm extractEntry less/tables.less
+197 silly gunzTarPerm extractEntry less/theme.less
+198 silly gunzTarPerm extractEntry less/thumbnails.less
+199 silly gunzTarPerm extractEntry less/tooltip.less
+200 silly gunzTarPerm extractEntry less/type.less
+201 silly gunzTarPerm extractEntry less/utilities.less
+202 silly gunzTarPerm extractEntry less/variables.less
+203 silly gunzTarPerm extractEntry less/wells.less
+204 verbose write writing to /Users/maxim/Documents/angular2/forms/node_modules/bootstrap/package.json
+205 info preinstall bootstrap@3.3.6
+206 verbose readDependencies loading dependencies from /Users/maxim/Documents/angular2/forms/node_modules/bootstrap/package.json
+207 verbose readDependencies loading dependencies from /Users/maxim/Documents/angular2/forms/node_modules/bootstrap/package.json
+208 silly install resolved []
+209 verbose about to build /Users/maxim/Documents/angular2/forms/node_modules/bootstrap
+210 info build /Users/maxim/Documents/angular2/forms/node_modules/bootstrap
+211 info linkStuff bootstrap@3.3.6
+212 silly linkStuff bootstrap@3.3.6 has /Users/maxim/Documents/angular2/forms/node_modules as its parent node_modules
+213 verbose linkBins bootstrap@3.3.6
+214 verbose linkMans bootstrap@3.3.6
+215 verbose rebuildBundles bootstrap@3.3.6
+216 info install bootstrap@3.3.6
+217 info postinstall bootstrap@3.3.6
+218 verbose unlock done using /Users/maxim/.npm/_locks/bootstrap-39d6ea6707d83b8d.lock for /Users/maxim/Documents/angular2/forms/node_modules/bootstrap
+219 verbose validateInstall loading /Users/maxim/Documents/angular2/forms/package.json for validation
+220 verbose stack Error: The package @angular/core does not satisfy its siblings' peerDependencies requirements!
+220 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+220 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:267:7
+220 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
+220 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+220 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+220 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+220 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+220 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+220 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+220 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+221 verbose cwd /Users/maxim/Documents/angular2/forms
+222 error Darwin 14.4.0
+223 error argv "node" "/usr/local/bin/npm" "install" "bootstrap" "--save"
+224 error node v0.12.4
+225 error npm  v2.10.1
+226 error code EPEERINVALID
+227 error peerinvalid The package @angular/core does not satisfy its siblings' peerDependencies requirements!
+227 error peerinvalid Peer @angular/common@2.0.0-rc.3 wants @angular/core@2.0.0-rc.3
+227 error peerinvalid Peer @angular/compiler@2.0.0-rc.3 wants @angular/core@2.0.0-rc.3
+227 error peerinvalid Peer @angular/forms@0.1.1 wants @angular/core@2.0.0-rc.3
+227 error peerinvalid Peer @angular/http@2.0.0-rc.3 wants @angular/core@2.0.0-rc.3
+227 error peerinvalid Peer @angular/platform-browser@2.0.0-rc.3 wants @angular/core@2.0.0-rc.3
+227 error peerinvalid Peer @angular/platform-browser-dynamic@2.0.0-rc.3 wants @angular/core@2.0.0-rc.3
+227 error peerinvalid Peer @angular/router@3.0.0-alpha.7 wants @angular/core@^2.0.0-rc.2
+227 error peerinvalid Peer @angular/router-deprecated@2.0.0-rc.2 wants @angular/core@^2.0.0-rc
+227 error peerinvalid Peer @angular/upgrade@2.0.0-rc.3 wants @angular/core@2.0.0-rc.3
+227 error peerinvalid Peer angular2-in-memory-web-api@0.0.12 wants @angular/core@2.0.0-rc.2
+228 verbose exit [ 1, true ]
